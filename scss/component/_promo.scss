@@ -1,0 +1,25 @@
+
+/*-------------------------------------------------------
+10. Promo css 
+---------------------------------------------------------*/
+
+.price-area {
+    padding-bottom: 26rem;
+	@include bg-cs;
+}
+
+.promo-wpr {
+	@include bg-cs;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-image: -moz-linear-gradient( 159deg, rgb(254,253,247) 5%, rgb(254,249,254) 35%, rgb(253,248,244) 65%, rgb(243,247,253) 95%);
+	background-image: -webkit-linear-gradient( 159deg, rgb(254,253,247) 5%, rgb(254,249,254) 35%, rgb(253,248,244) 65%, rgb(243,247,253) 95%);
+	background-image: -ms-linear-gradient( 159deg, rgb(254,253,247) 5%, rgb(254,249,254) 35%, rgb(253,248,244) 65%, rgb(243,247,253) 95%);
+	box-shadow: 0px 14px 40px 0px rgba(98, 100, 166, 0.06);
+	padding: 7rem 8rem;
+	align-items: center;
+	margin-top: -13rem;
+	.promo-right {
+		text-align: center;
+	}
+}

@@ -1,0 +1,46 @@
+/*-------------------------------------------------------
+5. Experience css
+---------------------------------------------------------*/
+
+.site-tl {
+	font-weight: 600;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient( 122deg, #1d1585  0%, #3a44ca 100%);
+	background-image: linear-gradient( 122deg, #1d1585  0%, #3a44ca 100%);
+}
+
+.exp-area {
+	@include bg-cs;
+}
+
+.exp-box {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 7px 27.84px 1.16px rgba(227, 229, 243, 0.1);
+	background-color: var(--white-color);
+	padding: 3rem;
+	display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+	.exp-icon {
+		i {
+			font-size: 3rem;
+			@include gr-clr;
+		}
+	}
+	h4 {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 2rem;
+	}
+	p {
+		line-height: 1;
+		margin-bottom: 7px;
+	}
+	span {
+		font-size: 1.4rem;
+	}
+}
+
+

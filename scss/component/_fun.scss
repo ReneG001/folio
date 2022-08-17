@@ -1,0 +1,62 @@
+
+/*-------------------------------------------------------
+6. Fun Fact css 
+---------------------------------------------------------*/
+
+
+.counter-area {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.counter-content {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	.site-tl {
+		line-height: 1.389;
+	}
+}
+
+.counter-wpr.grid-2 {
+    grid-gap: 10rem;
+}
+
+.fun-fact {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 27.2px 4.8px rgba(135, 127, 162, 0.04);
+	background-color: var(--white-color);
+    padding: 3rem;
+	.fun-icon {
+		i {
+			font-size: 5rem;
+			@include gr-clr;
+		}
+	}
+	.fun-desc {
+		.timer {
+			font-size: 2.2rem;
+			font-weight: 700;
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+		span {
+			
+		}
+	}
+}
+
+.counter-left-pic {
+    position: relative;
+    z-index: 1;
+    .ply-btn {
+        position: absolute;
+        bottom: 8rem;
+        left: 64%;transform: translate(-50%,0);
+    }
+}
