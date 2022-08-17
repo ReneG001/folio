@@ -1,0 +1,78 @@
+
+/*-------------------------------------------------------
+14. Blog css
+---------------------------------------------------------*/
+
+.blog-box {
+	.blog-info {
+		padding: 3rem 5rem;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color: var(--white-color);
+		-webkit-box-shadow: 0px 7px 12px 0px rgba(0, 11, 40, 0.06);
+		box-shadow: 0px 7px 12px 0px rgba(0, 11, 40, 0.06);
+		.blog-meta {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 1.5rem;
+		}
+		.blog-title {
+			font-size: 2rem;
+			font-weight: 500;
+			margin-bottom: 3rem;
+			line-height: 1.4;
+			&:hover {
+				color: var(--theme-color-2);
+			}
+		}
+	}
+}
+
+.blog-btn {
+    text-align: right;
+}
+
+.btn-4 {
+	border-radius: 50%;
+	background-color: var(--theme-color);
+	color: var(--white-color);
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 3rem;
+	display: inline-block;
+}
+
+
+.blog-2  {
+	.blog-title {
+		margin-bottom: 1.5rem!important;
+		font-weight: 600!important;
+	}
+	.blog-meta {
+		margin-bottom: 3rem!important;
+		line-height: 1
+	}
+}
+
+.blog-box.blog-2 .blog-info {
+	padding: 3rem;
+}
+
+
+//OWl Carousel
+
+.blog-sldr.owl-carousel .owl-stage-outer {
+    margin: -15px -15px 0;
+    padding: 15px;
+}
+
+.blog-sldr.owl-theme .owl-dots .owl-dot.active span,
+.blog-sldr.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--theme-color);
+}
+
+.blog-sldr.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 4rem;
+}

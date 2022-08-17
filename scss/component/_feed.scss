@@ -1,0 +1,76 @@
+
+/*-------------------------------------------------------
+3. Feedback css 
+---------------------------------------------------------*/
+
+.feedback-area {
+	@inclide bg-cs;
+}
+
+.feedback-box {
+	-webkit-box-shadow: 0px 9px 12px 1.68px rgba(184, 185, 195, 0.07);
+	box-shadow: 0px 9px 12px 1.68px rgba(184, 185, 195, 0.07);
+	padding: 5rem 4rem;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: var(--white-color);
+	.feedback-pc {
+		margin-bottom: 3rem;
+		img {
+			
+		}
+	}
+	p {
+		margin-bottom: 4rem;
+	}
+	.feedback-desc {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		.feedback-bio {
+			h5 {
+				margin-bottom: 5px;
+			}
+			span {
+				
+			}
+		}
+	}
+}
+
+//Feedback Slider
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: inherit;
+}
+
+.feed-sldr.owl-carousel .owl-stage-outer {
+    padding: 15px;
+    margin: -15px -15px 0;
+}
+
+.feed-sldr.owl-theme .owl-nav {
+    margin-top: 80px;
+}
+
+.feed-sldr.owl-theme .owl-nav [class*=owl-] {
+	color: var(--theme-color);
+	font-size: 1.8rem;
+	margin: 5px;
+	padding: 0;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: var(--white-color);
+	box-shadow: 0px 0px 29px 0px rgba(103, 103, 165, 0.13);
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.feed-sldr.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--theme-color);
+    color: #FFF;
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+
+/*-------------------------------------------------------
+11. What We do css 
+---------------------------------------------------------*/
+.fq-area {
+	position: relative;
+	z-index: 1;
+}
+
+.faq-shape {
+	img {
+		position: absolute;
+		z-index: -1;
+		&:first-child {
+			top: 10%;
+			right: 14%;
+		}
+		&:nth-child(2) {
+			top: 21%;
+			left: 20%;
+		}
+	}
+}
+
+.accordion-item {
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgb(246, 245, 255);
+}
+
+.accordion-item:not(last-child) {
+	margin-bottom: 3rem;
+}
+
+.accordion-button {
+    padding: 2.5rem 2rem;
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    background-color: var(--bg-color);
+	font-weight: 500;
+}
+
+.accordion-button::after {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f067"; /* FontAwesome Unicode */
+	font-weight: 900;
+	background-image: inherit;
+	font-size: 1.4rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+	background-image: inherit;
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f068"; /* FontAwesome Unicode */
+	font-weight: 900;
+	font-size: 1.4rem;
+}
+
+.accordion-button:not(.collapsed) {
+	border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--heading-color);
+    background-color: var(--white-color);
+    box-shadow: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0rem 3rem 3rem 3rem;
+	p {
+		font-size: 1.6rem;
+	}
+}
+

@@ -1,0 +1,102 @@
+
+/*-------------------------------------------------------
+4. Hero css 
+---------------------------------------------------------*/
+
+ .shape-pos {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.hero-single {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.hero-right {
+    text-align: center;
+}
+
+/*Hero Content*/
+
+.top-title {
+	font-size: 2.4rem;
+	line-height: 2.25;
+	color: #47416f;
+	font-weight: 500;
+	position: relative;
+	z-index: 1;
+	padding-right: 7.5rem;
+	display: inline-block;
+	align-self: flex-start;
+	&::before {
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 50%;
+		transform: translate(0,-50%);
+		width: 6.3rem;
+		height: 2px;
+		background-color: rgb(120, 84, 247);
+	}
+}
+
+
+
+
+
+.hero-content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+	h2 {
+		font-size: 4rem;
+		line-height: 1.5;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 2rem;
+		color: var(--body-color);
+		span {
+			color: var(--theme-color);
+		}
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.778;
+		margin-bottom: 0;
+	}
+}
+
+/*Hro Btn Css*/
+
+.hro-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+//Header top
+
+.hhm-as {
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	width: 100%;
+}
+
+.hhm-as-wpr {
+    align-items: center;
+	.hhm-as-right {
+		text-align: right;
+	}
+}

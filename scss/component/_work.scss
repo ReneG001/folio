@@ -1,0 +1,102 @@
+
+/*-------------------------------------------------------
+9. Project css 
+---------------------------------------------------------*/
+
+.project-area {
+	@include bg-cs;
+}
+
+#portfolio {  
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+}
+	
+.project-wpr {
+    display: grid;
+    grid-template-columns: 228px 1fr;
+    grid-gap: 10rem;
+    padding-left: 36rem;
+    padding-right: 10rem;
+}
+
+.project-box {
+	width: 100%;
+	display: none;
+	img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+		
+.btn.fil-cat {
+	font-size: 1.8rem;
+	font-weight: 400;
+	cursor: pointer;
+	display: block;
+	padding: 0;
+	margin: 0 0 1.5rem;
+	height: auto;
+	border: none; 
+	background-color: transparent;
+	outline: none;
+	&:last-child {
+		margin: 0 0 0rem;
+	}
+}
+
+.btn.fil-cat:focus {
+	box-shadow: none;
+}
+
+
+.port-pic {
+    position: relative;
+    z-index: 1;
+	margin-bottom: 15px;
+	.port-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		-webkit-transform: rotateY(90deg);
+		transform: rotateY(90deg);
+		-webkit-transition: .5s ease;
+		transition: .5s ease;
+		a {
+			i {
+				color: var(--white-color);
+				font-size: 3rem;
+			}
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			background-color: rgba(0,0,0,.7);
+		}
+	}
+	&:hover .port-overlay {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+
+
+//.portfolio-items {
+//	display: grid;
+//	grid-template-columns: repeat(3,1fr);
+//	grid-gap: 3rem;
+//}

@@ -1,0 +1,109 @@
+
+/*-------------------------------------------------------
+20. Footer css 
+---------------------------------------------------------*/
+
+
+.footer {
+    position: relative;
+	@include bg-cs;
+}
+
+.contact-area.grid-2 {
+    grid-gap: 13rem;
+}
+
+.addr {
+	p {
+		font-size: 2rem;
+	}
+}
+
+.contact-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+}
+
+.input-style-2 {
+	padding: 2rem 2rem 1.3rem 2rem;
+    border: none;
+    border-bottom: 2px solid rgb(204, 204, 219);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    line-height: 1.6;
+	background-color: transparent;
+	&::placeholder {
+		font-size: 1.6rem;
+		color: #787781;
+		opacity: 1;
+	}
+}
+
+.input-style-2:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+textarea.input-style-2 {
+	height: 15rem!important;
+}
+
+button.theme-btn {
+	border: none;
+}
+
+//Footer Social
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+	li {
+		a {
+			i {
+				height: 3rem;
+				width: 3rem;
+				line-height: 3rem;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				background-color: var(--white-color);
+				box-shadow: 0px 5px 24px 0px rgba(66, 64, 64, 0.12);
+				text-align: center;
+				font-size: 1.5rem;
+				display: inline-block;
+				&:hover {
+					background-color: var(--theme-color);
+					color: var(--white-color);
+				}
+			}
+		}
+	}
+}
+
+//Copyright
+
+.copyright-area {
+    padding-bottom: 7rem;
+	.copyright-right {
+		display: flex;
+		gap: 10rem;
+		align-items: center;
+	}
+}
+
+.copyright-menu a,
+.copyright-text {
+	font-weight: 500;
+	font-size: 1.8rem;
+	color: #47416f;
+	text-transform: capitalize;
+}
+
+
